@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+     <link rel="stylesheet" href="./css/media.css"> 
+    <title>Media Page</title>
+  </head>
+  <body>
+    <div class="container">
+      <h1>Media Gallery</h1>
+      <main>
+        <div class="picture-container">
+          <h3>Photo Gallery</h3>
+          <picture>
+            <source
+              srcset="asset/image-Large.jpg"
+              media="(min-width: 1024px)"
+            />
+            <source
+              srcset="asset/image-medium.jpg"
+              media="(min-width: 768px)"
+            />
+            <source srcset="asset/image-small.jpg" media="(max-width: 767px)" />
+            <img
+              src="asset/image-default.jpg"
+              alt="A photo representation of me as a Backend developer"
+            />
+          </picture>
+        </div>
+
+        <div class="media-container">
+          <h3>Video Presentation</h3>
+          <video controls>
+            <source src="asset/coding_tutorial.mp4" type="video/mp4" />
+            Your browser does not support the video tag.
+          </video>
+        </div>
+
+        <div class="media-container">
+          <h3>Audio Introduction</h3>
+         
+          <audio controls>
+           
+            <source src="asset/coding_playlist.mp3" type="audio/mpeg"/>
+            Your browser does not support the audio element.
+         
+          </audio>
+        </div>
+
+      <p>
+        Hello! I am a passionate Backend developer with expertise in creating
+        responsive and accessible web pages. I specialize in HTML, CSS, and
+        JavaScript, and I enjoy bringing ideas to life in the browser.
+      </p>
+    </div>
+    <footer>
+        <a href="index.html">About Me </a>
+        <a href="form.html">AltSchool Application Form</a>
+        <a href="table.html">Available Courses and Schools</a>
+    </footer>
+  </body>
+</html>
